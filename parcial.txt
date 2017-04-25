@@ -5,9 +5,19 @@
         Segment Space Management Auto;
 
 2 ) luego crear la tabla 
-create table Salario (
+create table employees(
 
-  idSalario_pk    integer        not null,
+  employyess_ID INTEGER        not null,
+  firs_name    VARCHAR2(20)  not null,
+  Last_name    VARCHAR2(25)  not null,
+  Email        VARCHAR2(25)  not null,
+  Phone_Number VARCHAR2(20)  not null,
+  Hire_date    DATE,
+  Job_id       VARCHAR2(10) not null,
+  Salary       NUMBER(8) not null,
+  COMMISION_PTC NUMBER(8) NOT NULL,
+  Manager_ID 	NUMBER(8),
+  Departament_ID NUMBER(4)
 
 );
 3) luego se crea el indice 
