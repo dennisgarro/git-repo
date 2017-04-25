@@ -1,0 +1,14 @@
+1) primero se debe crear un tableespace  salarios
+	Create Tablespace tbl_salarios
+        Datafile 'salarios.dbf' Size 1GB
+        Extent Management Local
+        Segment Space Management Auto;
+
+2 ) luego crear la tabla 
+create table Salario (
+
+  idSalario_pk    integer        not null,
+
+);
+3) luego se crea el indice 
+create unique index Salario on IDSalario (col_pk);
